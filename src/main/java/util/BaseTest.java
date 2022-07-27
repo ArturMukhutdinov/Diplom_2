@@ -3,6 +3,7 @@ package util;
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
 import model.*;
 import org.junit.After;
 
@@ -20,7 +21,6 @@ public class BaseTest {
 
     static final String USER_CREATION_ENDPOINT = "/auth/register";
     static final String USER_AUTH_ENDPOINT = "/auth/login";
-    static final String USER_LOGOUT_ENDPOINT = "/auth/logout";
     static final String USER_ENDPOINT = "/auth/user";
     static final String ORDER_ENDPOINT = "/orders";
 
